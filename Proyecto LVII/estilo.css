@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    cursor: url('./resource/cursor2.gif'), auto; /* Cambia el cursor a una imagen personalizada */
+}
+.content {
+    padding: 20px;
+}
+.header {
+    background-color: red;
+    color: white;
+    padding: 10px 0;
+    font-size: 2em;
+}
+.scripture {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+.subtext {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+.link {
+    margin: 20px 0;
+}
+.link a {
+    color: blue;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.rotate {
+    transition: transform 3s ease; /* Duración y estilo de la transición */
+}
+
+.rotate:hover {
+    transform: rotate(360deg); /* Rotación completa */
+}
