@@ -1,12 +1,13 @@
 body {
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     color: black;
-    font-family: Arial, sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     text-align: center;
     margin: 0;
     padding: 0;
 
-    cursor: url('./resource/cursor2.gif'), auto; /* Cambia el cursor a una imagen personalizada */
+    cursor: url('./resource/img/cursorTenis.gif'), auto; 
+
 }
 .content {
     padding: 20px;
@@ -44,4 +45,73 @@ body {
 
 .rotate:hover {
     transform: rotate(360deg); /* Rotación completa */
+}
+
+.scale {
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.scale:hover {
+    transform: scale(1.8); /* Agranda la imagen al 150% de su tamaño original */
+}
+
+.blur{
+    filter: blur(10px); /* Aplica desenfoque inicial */
+    transition: filter .5s ease; /* Suaviza la transición */
+}
+
+.blur:hover {
+    filter: blur(0px); /* Elimina el desenfoque al pasar el mouse */
+}
+
+.chapuson {
+    transition: transform 1s ease-in-out; /* Suaviza la transición */
+}
+
+.chapuson:hover {
+    animation: rebote 1.1s ease-in-out; /* Aplica la animación de rebote */
+}
+
+@keyframes rebote {
+    0%, 100% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    30% {
+        transform: scale(1.1); /* Agranda la imagen al 110% */
+    }
+    50% {
+        transform: scale(0.9); /* Reduce la imagen al 90% */
+    }
+    70% {
+        transform: scale(1.05); /* Agranda la imagen al 105% */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño normal */
+    }
+}
+
+.bounce {
+    transition: transform 0.5s ease-in-out; /* Suaviza la transición */
+}
+
+.bounce:hover {
+    animation: bounce 1.1s ease-in-out; /* Aplica la animación de rebote */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translatex(-50%); /* Mueve la imagen hacia arriba */
+    }
+    50% {
+        transform: translatex(50%); /* Vuelve a la posición original */
+    }
+    70% {
+        transform: translatex(-50%); /* Rebote más pequeño */
+    }
+    100% {
+        transform: translatex(0); /* Vuelve a la posición original */
+    }
 }
