@@ -1,0 +1,62 @@
+/* Santiago Leonardi */
+#logo-container{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img-logo{
+    height: 100%;
+    width: 100%;
+}
+
+.carrito{
+    display: flex;
+    align-items: center;
+}
+
+#imgCarrito{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.tarjeta-producto{
+    width: 250px;              
+    display: flex;
+    flex-direction: column;   
+    align-items: center;       
+    border: solid 1px #818181; 
+}
+
+.tarjeta-producto img {
+    width: 200px; 
+    height: 200px;  
+}
+
+#btn-reproducir-musica{
+    height: 4%;
+    width: 2%;
+    position: absolute;
+    left: 49%;
+
+}
+
+#btn-reproducir-musica:hover{
+    cursor: pointer;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;      
+    flex-wrap: wrap;        
+    max-width: 90%;
+    margin: 0% auto;
+}
+
+#total-carrito{
+    max-width: 10%;
+    margin: 1% auto;
+}
